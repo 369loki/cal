@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">   
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.transparentpng.com/thumb/anonymous-mask/anonymous-mask-icon-png-25.png" alt="anonymous mask icon png @transparentpng.com "> 
+   <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+    <meta name="description" content="Calculator">
+</head>
+<body>
+    <div class="container">
+  
+        <div class="Calculator">
+           <input class="input" id="input"  >
+            <button  class="first one" onclick="input('1')" >1</button>
+            <button class="first two" onclick="input('2')" >2</button>
+            <button  class="first three" onclick="input('3')" >3</button>
+            <button  class="first delete" onclick="del()" >DEL</button>
+            <button class="first four" onclick="input('4')">4</button>
+            <button  class="first five" onclick="input('5')">5</button>
+            <button  class="first six" onclick="input('6')" >6</button>
+            <button  class="first plus" onclick="input('+')">+</button>
+            <button  class="first seven" onclick="input('7')" >7</button>
+            <button class="first eight" onclick="input('8')" >8</button>
+            <button  class="first nine" onclick="input('9')">9</button>
+            <button  class="first minus" onclick="input('-')" >-</button>
+            <button class="first dot" onclick="input('.')">.</button> 
+            <button  class="first zero" onclick="input('0')" >0</button>
+            <button class="first div" onclick="input('/')">&divide</button>
+            <button class="first multi" onclick="input('*')" >&times</button>
+            <button class="first equal" onclick="brocode()" >=</button>
+        </div>
+    
+    </div>
+<script >
+
+function input(x){
+    return document.getElementById("input").value += x ; 
+}
+
+
+function del(){
+    document.getElementById("input").value = "" ; 
+}
+function brocode(){
+    var loki = document.getElementById("input").value;
+    var loki1 = eval(loki)
+    
+    return document.getElementById("input").value = loki1; 
+}
+
+</script>
+</body>
+</html>

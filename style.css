@@ -1,0 +1,123 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient( to bottom, rgb(240, 255, 105) ,rgb(66, 253, 244));
+    min-width: 100vw;
+    min-height:100vh;
+}
+.Calculator{
+   width:380px;
+   height:530px;
+   display:grid;
+   background: white;
+   grid-template-columns:repeat(4,90px) ;
+   grid-template-rows:repeat(5,90px);
+   place-content: center;
+   border-radius: 15px;
+   border: 1px solid black;
+
+}
+.input{
+    grid-column: span 4;
+    font-size:34px;
+    
+    padding:10px;
+    border: 2px solid black;
+   overflow:visible;
+    flex-wrap: wrap;
+    text-align:right;
+   
+   
+}
+
+button{
+    border: 2px solid rgb(255, 255, 255);
+    background: #bbbbbbe3;
+    font-size:24px;}
+    
+button:hover{
+    border: 2px solid white;
+    background: #d8d7d7e3;
+    font-size:22px;   
+}
+button:active{
+    border: 2px solid rgb(255, 252, 252);
+    background: #c7bcbce3;
+    font-size:22px;
+}
+.equal{
+    grid-column: span 4;
+    height:60px;
+}
+
+
+@media (max-width:480px) {
+ .Calculator{
+   width:300px;
+   height:430px;
+   display:grid;
+   background: white;
+   grid-template-columns:repeat(4,70px) ;
+   grid-template-rows:repeat(5,70px);
+   place-content: center;
+   border-radius: 15px;
+   border: 1px solid black;
+
+}
+  }
+  
+  
+  @media (max-width:240px) {
+ .Calculator{
+   width:110px;
+   height:134px;
+   display:grid;
+   background: white;
+   grid-template-columns:repeat(4,24px) ;
+   grid-template-rows:repeat(5,22px);
+   place-content: center;
+   border-radius: 10px;
+   border: 1px solid black;
+
+}
+
+.input{
+    grid-column: span 4;
+    font-size:8px;
+    
+    padding:10px;
+    border: 1.5px solid black;
+   overflow:visible;
+    flex-wrap: wrap;
+    text-align:right;
+   
+   
+}
+
+button{
+    border: 1.5px solid rgb(255, 255, 255);
+    background: #bbbbbbe3;
+    font-size:8px;}
+    
+button:hover{
+    border: 1.5px solid white;
+    background: #d8d7d7e3;
+    font-size:7px;   
+}
+button:active{
+    border: 1.5px solid rgb(255, 252, 252);
+    background: #c7bcbce3;
+    font-size:8px;
+}
+.equal{
+    grid-column: span 4;
+    height:100%;
+}
+  }
