@@ -1,4 +1,4 @@
-#Calce
-basic math calculator
 
-SiteLink: https://369loki.github.io/math-calce/
+# basic math calculator
+
+SiteLink: https://thelokesha.github.io/math-calce/
